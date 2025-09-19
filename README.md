@@ -34,9 +34,9 @@ De opdracht is om zelfstandig de login functionaliteit te laten werken.
 
 (aangemaakte) branches:
 
-Main
-Develop
-Hotfix/uc4 typo
-feauture/usecase5
-feature/UC6
+- Main
+- Develop
+- Hotfix/uc4 typo
+- feauture/usecase5
+- feature/UC6
  
