@@ -19,12 +19,15 @@ namespace Grocery.Core.Data.Repositories
 
         public Client? Get(string email)
         {
-            return clientList[0];
+            //firstordefault geeft de eerste client (waarde) terug met de gegeven email
+            // bij geen match: returnt null
+            return clientList.FirstOrDefault(c => c.Email == email);
         }
 
         public Client? Get(int id)
         {
-            return clientList[0];
+            // zoeken op Id in plaats van altijd de eerste
+            return clientList.FirstOrDefault(c => c.Id == id); // c => lambda expressie (voor elke client c, check of...)
         }
 
         public List<Client> GetAll()
